@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="styleHeadFoot.css" rel="stylesheet">
+   <link rel="stylesheet" href="cart_page.css">
+   <link rel="stylesheet" href="online_courses.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+   <link
+     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+     rel="stylesheet"/>
+
+</head>
+
+<body>
+
+
+
+    <div class="hbside1" id="hbsideid1">
+        <div>
+            <div class="hb1sidehead">
+                <div class="hb1">
+                    <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='none'">
+                        <span class="material-icons">
+                            menu
+                        </span>
+    
+                    </div>
+                </div>
+                <div class="hb2">
+                    <img src="https://assets.interntheory.com/creative/logo.png" />
+                </div>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            home
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Home
+                    </div>
+                </a>
+            </div>
+    
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            view_list
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            work
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Jobs
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            playlist_add
+                        </span>
+    
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Post Internships
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            class
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Courses
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            call
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Contact Us
+                    </div>
+                </a>
+            </div>
+            <hr>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            subject
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Register
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <div>
+                        <span class="material-icons">
+                            meeting_room
+                        </span>
+                    </div>
+                    <div class="hb1sideheaddivadiv">
+                        Login
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="header sticky" id="myHeader">
+        <div>
+            <div class="hb1">
+                <div class="hb1list pointer" onclick="document.getElementById('hbsideid1').style.display='block'">
+                    <span class="material-icons">
+                        menu
+                    </span>
+    
+                </div>
+            </div>
+            <div class="hb2">
+                <a href="mainPage.html"><img src="https://assets.interntheory.com/creative/logo.png" /></a>
+            </div>
+            <div class="hb3"></div>
+            <div class="hb4">
+                <div id="shopCart" class="pointer">
+                    <div>
+                        <div id="cartNum">1</div>
+                    </div>
+                    <span class="material-icons">
+                        shopping_cart
+                    </span>
+    
+    
+                </div>
+                <div>
+                    <a class="sign" href="https://www.interntheory.com/login/student">
+                        <div>SIGN IN</div>
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content" id="con1">
+           <div id="backgroundBlock">
+               <div class="container">
+                       <div class="left">
+                           <div style="font-size: 20px;">Cart</div>
+                           <!-- cart things                    -->
+                           <div id="cart_values">
+                               <div class="mark"></div>
+                               <div></div>
+                               <div id="courses"></div>
+                               <div></div>
+                               <div class="crossedValue"></div>
+                               <div id="courseRate"></div>
+                           </div>
+                           <div id="empty_cart">
+                               <input type="button" value="Empty Cart" id="emptyCart">
+                           </div>
+                        </div>
+                        <div class="right">
+                            <div class="outerSizing">
+                                <div class="amount_line">
+                                    <div>Amount</div>
+                                    <div style="width: 45%;"></div>
+                                    <div id="rate"></div>
+                                </div>
+                                <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
+                                    <div><span> CGST9%</span></div>
+                                    <div style="width: 50%;"></div>
+                                    <div>₹3600</div>
+                                </div>
+                                <div class="sgst_line">
+                                    <div>SGST9%</div>
+                                    <div style="width: 50%;"></div>
+                                    <div>₹3600</div>
+                                </div>
+                                <div class="total_line">
+                                    <div>Total:</div>
+                                    <div style="width: 60%;"></div>
+                                    <div id="total"></div>
+                                </div>
+                                <div style="margin:10%"></div>
+                                <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);"> 
+                                    <label for="couponcode">
+                                    <input id="couponcode" type="text" placeholder="Coupon Code" style="outline: none; border: none;font-weight: 300; font-size: 15px;">
+                                </label>
+                                </div>
+                                <div id="goBtn">
+                                    <input type="button" value="GO" id="goInput">
+                                </div>
+                                <div></div>
+                                <div id="checkoutBtn">
+                                    <input type="button" value="CHECKOUT" id="checkoutInput">
+                                </div>
+                                <div class="emiAppend"></div>
+                            </div>
+                            
+                        </div>
+               </div>
+           </div>     
+    </div>
+
+
+
+    <div class="contentFoot">
+        <div class="footb1">
+            <div class="connect">
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+                <div><span class="material-icons">
+                        facebook
+                    </span>
+                </div>
+
+            </div>
+            <div class="info">
+                <div>
+                    <div>BY PLACE</div>
+                    <hr>
+                    <div>Internships In Mumbai</div>
+                    <div>Internships In Delhi</div>
+                    <div>Internships In Bangalore</div>
+                    <div>Internships In Pune</div>
+                    <div>Internships In Hyderabad</div>
+                </div>
+                <div>
+                    <div>BY PROFILE</div>
+                    <hr>
+                    <div>Marketing Internships</div>
+                    <div>Business Development Internships</div>
+                    <div>Content Writing Interships</div>
+                    <div>Graphic Design Internships</div>
+                    <div>HR internships</div>
+                    <div>Engineering Internships</div>
+                </div>
+                <div>
+                    <div>BY TYPE</div>
+                    <hr>
+                    <div>Full Time Internships</div>
+                    <div>Part Time Internships</div>
+                    <div>Work From Home Internships</div>
+                </div>
+            </div>
+        </div>
+        <div class="footb2">
+            <div>Find Intership</div>
+            <div>Post Intership</div>
+            <div>Courses</div>
+            <div>Terms&Conditions</div>
+            <div>Privacy Polivy</div>
+            <div>Contact us</div>
+            <div>About us</div>
+            <div>Site us</div>
+        </div>
+        <hr>
+        <div class="footb3">
+            © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+<script src="page2.js"></script>
