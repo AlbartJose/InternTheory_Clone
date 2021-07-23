@@ -5,7 +5,6 @@ function itstark(event){
         xprice: 32999,
         price: 15999
     }
-    
     let arr;
     arr = localStorage.getItem("cart");
     
@@ -14,13 +13,15 @@ function itstark(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
-    arr.push(cart);
-    
-    localStorage.setItem("cart", JSON.stringify(arr));
-    
     var itAdd = document.getElementById("itAdd1")
     itAdd.textContent = "Checkout"
-    
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
+    arr.push(cart);
+    localStorage.setItem("cart", JSON.stringify(arr));
 }
 function finance(event){
     event.preventDefault()
@@ -38,11 +39,16 @@ function finance(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd2")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd2")
-    itAdd.textContent = "CHECKOUT"
 }
 function digital(event){
     event.preventDefault()
@@ -60,11 +66,16 @@ function digital(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd3")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd3")
-    itAdd.textContent = "CHECKOUT"
 }
 function stock(event){
     event.preventDefault()
@@ -83,11 +94,16 @@ function stock(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd4")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd4")
-    itAdd.textContent = "CHECKOUT"
 }
 function data(event){
     event.preventDefault()
@@ -99,17 +115,22 @@ function data(event){
 
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd5")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd5")
-    itAdd.textContent = "CHECKOUT"
 }
 function web(event){
     event.preventDefault()
@@ -121,17 +142,22 @@ function web(event){
 
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd6")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd6")
-    itAdd.textContent = "CHECKOUT"
 }
 function android(event){
     event.preventDefault()
@@ -143,17 +169,22 @@ function android(event){
 
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd7")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd7")
-    itAdd.textContent = "CHECKOUT"
 }
 function itstart2(event){
     event.preventDefault()
@@ -171,11 +202,16 @@ function itstart2(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd8")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd8")
-    itAdd.textContent = "CHECKOUT"
 }
 function advanced(event){
     event.preventDefault()
@@ -193,11 +229,16 @@ function advanced(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd9")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd9")
-    itAdd.textContent = "CHECKOUT"
 }
 function rpro(event){
     event.preventDefault()
@@ -215,11 +256,16 @@ function rpro(event){
     } else {
         arr = JSON.parse(localStorage.getItem("cart"));
     }
+    var itAdd = document.getElementById("itAdd10")
+    itAdd.textContent = "CHECKOUT"
+    const nam = cart.name;
+    const found = arr.some(el => el.name === nam);
+    if (found) {
+        return;
+    }
     arr.push(cart);
     
     localStorage.setItem("cart", JSON.stringify(arr));
-    var itAdd = document.getElementById("itAdd10")
-    itAdd.textContent = "CHECKOUT"
 }
 let icon = document.getElementById("shopCart")
 icon.addEventListener("click", function(){
