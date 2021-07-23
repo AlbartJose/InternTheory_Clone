@@ -23,7 +23,7 @@
 .left{
     width: 70%;
     margin: 1%;
-    padding: 3%;
+    padding: 0%;
 }
 .right{
     width: 30%;
@@ -84,7 +84,43 @@
     border-radius: 3%;
     width: 20%;
     height: 35px;
-    margin-left: 90%;
+    margin-left: 80%;
     margin-top: 5%;
     font-weight: 600;
 }
+#cart_values button{
+ border-radius: 50%;
+ border: none;
+ background-color: #DF1E2E;
+ color: white;
+ font-weight: 600;
+ margin-right: 15%;
+}
+#cart_values > div{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    border-bottom: 1.8px dashed silver;
+    gap: 5px;
+}
+#divName{
+    margin-right: 24% !important;
+    
+}
+.badge:after{
+    content:attr(value);
+    font-size:12px;
+    background: red;
+    border-radius:50%;
+    padding:3px;
+    position:relative;
+    left:-8px;
+    top:-10px;
+    opacity:0.9;
+    }
