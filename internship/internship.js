@@ -15,7 +15,7 @@ var internships = [
         companyName: 'Bitpastel Solution Pvt Ltd',
         type: 'Work From Home',
         category: 'Software Development',
-        city: 'Kolkata',
+        city: 'mumbai',
         stipend: '7500 - 10000 per month'
         
     },
@@ -73,6 +73,8 @@ if (localStorage.getItem('internships') == null) {
 function showInternships(e) {
     let block = document.createElement('div');
     block.setAttribute('class', 'r_blocks')
+
+    block.innerHTML = null;
     
     
     let block_img = document.createElement('img');
@@ -173,18 +175,44 @@ function apply(e) {
   
 }
 
+
+
 function search() {
 
     var form = document.getElementById('myForm');
     var city = document.getElementById('myCity').value;
     var type = document.getElementById('myType').value;
-    console.log('type:', type)
     var preferences = document.getElementById('myPreferences').value;
-    console.log('preferences:', preferences)
-    console.log(city);
-
+    
+        
     function filter() {
-        let filtered = content.filter()
+        let filterCity = content.filter(function (el) {
+            return el.city == city;
+        });
+
+        let filterType = content.filter(function (el) {
+            return el.type == type;
+        });
+
+        let filterPreferences = content.filter(function (el) {
+            return el.category == preferences;
+        })
+        
+        // window.localStorage.removeItem("filterPreferences")
+        // window.localStorage.removeItem("filterCity")
+        // window.localStorage.removeItem("filterType")
+                    
+
+        // (localStorage.setItem('filterPreferences', JSON.stringify(filterPreferences)));
+        // (localStorage.setItem('filterCity', JSON.stringify(filterCity)));
+        // (localStorage.setItem('filterType', JSON.stringify(filterType)));
+        
+        
+    
     }
+    filter();
+    showInternships(JSON.parse(localStorage.getItem('filterPreferences')))
     
 }
+    
+
