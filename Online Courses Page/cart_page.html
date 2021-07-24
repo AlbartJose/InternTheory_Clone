@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="styleHeadFoot.css" rel="stylesheet">
-   <link rel="stylesheet" href="cart_page.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-     rel="stylesheet"/>
-     <title>Online Courses | Intern Theory</title>
+    <link rel="stylesheet" href="cart_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href='cart_page.css' rel='stylesheet' type='text/css'>
+    <title>Online Courses | Intern Theory</title>
+    <style>
+        
+    </style>
 
 </head>
 
@@ -27,7 +29,7 @@
                         <span class="material-icons">
                             menu
                         </span>
-    
+
                     </div>
                 </div>
                 <div class="hb2">
@@ -46,7 +48,7 @@
                     </div>
                 </a>
             </div>
-    
+
             <div>
                 <a href="">
                     <div>
@@ -77,7 +79,7 @@
                         <span class="material-icons">
                             playlist_add
                         </span>
-    
+
                     </div>
                     <div class="hb1sideheaddivadiv">
                         Post Internships
@@ -142,7 +144,7 @@
                     <span class="material-icons">
                         menu
                     </span>
-    
+
                 </div>
             </div>
             <div class="hb2">
@@ -161,7 +163,7 @@
                 <div>
                     <a class="sign" href="https://www.interntheory.com/login/student">
                         <div>SIGN IN</div>
-    
+
                     </a>
                 </div>
             </div>
@@ -170,59 +172,254 @@
 
 
     <div class="content" id="con1">
-           <div id="backgroundBlock">
-               <div class="container">
-                       <div class="left">
-                           <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
-                           <!-- cart things                    -->
-                           <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
+        <div id=container>
+            <div id=paymentBox>
+                <div class=topBox>
+                    <div class=logo>
+                        <img src='https://cdn.razorpay.com/logos/8BOCiNqJJB6Zfs_medium.jpg' />
+                    </div>
+                    <div class='top_head'>
+                        <p>InternTheory</p>
+                        <p>Purchase Description</p>
+                        <p id="amount">₹ 0000</p>
+                    </div>
+                </div>
 
-                           </div>
-                           <div id="empty_cart">
-                               <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
-                           </div>
+                <div id='content'>
+                    <div id='red' style="width:100%;height:2%;background-color:rgb(184, 28, 41)"></div>
+                    <div>
+                        <div>
+                            <p class='content_heading'>PREFERED PAYMENT METHODS</p>
                         </div>
-                        <div class="right">
-                            <div class="outerSizing">
-                                <div class="amount_line">
-                                    <div>Amount</div>
-                                    <div style="width: 45%;"></div>
-                                    <div id="rate"></div>
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
                                 </div>
-                                <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
-                                    <div><span> CGST9%</span></div>
-                                    <div style="width: 50%;"></div>
-                                    <div>₹3600</div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>EMI - Use Your Saved Cards</p>
+                                    </div>
+
                                 </div>
-                                <div class="sgst_line">
-                                    <div>SGST9%</div>
-                                    <div style="width: 50%;"></div>
-                                    <div>₹3600</div>
-                                </div>
-                                <div class="total_line">
-                                    <div>Total:</div>
-                                    <div style="width: 60%;"></div>
-                                    <div id="total"></div>
-                                </div>
-                                <div style="margin:10%"></div>
-                                <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);"> 
-                                    <label for="couponcode">
-                                    <input id="couponcode" type="text" placeholder="Coupon Code" style="outline: none; border: none;font-weight: 300; font-size: 15px;">
-                                </label>
-                                </div>
-                                <div id="goBtn">
-                                    <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
-                                </div>
-                                <div></div>
-                                <div id="checkoutBtn">
-                                    <input type="button" value="CHECKOUT" id="checkoutInput">
-                                </div>
-                                <div class="emiAppend"></div>
-                            </div>
-                            
+                            </button>
+
                         </div>
-               </div>
-           </div>     
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI - Google Pay</p>
+                                    </div>
+
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button_1' onclick='card()'>
+                                <div class='button_vector_1'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI - BHIM</p>
+                                    </div>
+
+                                </div>
+                            </button>
+
+                        </div>
+
+
+
+                    </div>
+                    <div>
+                        <div>
+                            <p class='content_heading'>CARDS, UPI & MORE</p>
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Card</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>Visa,MasterCard,RuPay&More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance_wallet
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>UPI/QR</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>Google Pay,BHIM,PhonePe&More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        language
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Net Banking</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>All Indian Banks</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        payments
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Wallet</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>PhonePe & More</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        account_balance
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>EMI</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>EMI via Credit & Debit Cards</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div>
+                            <button class='content_button' onclick='card()'>
+                                <div class='button_vector'>
+                                    <span class="material-icons" style="color:rgb(233, 54, 69)">
+                                        credit_card
+                                    </span>
+                                </div>
+                                <div class='button_1'>
+                                    <div>
+                                        <p class='payment_type'>Pay Later</p>
+                                    </div>
+                                    <div class='card_options'>
+                                        <p>ICICI Bank PayLater</p>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="backgroundBlock">
+
+            <div class="container">
+                <div class="left">
+                    <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
+                    <!-- cart things                    -->
+                    <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
+
+                    </div>
+                    <div id="empty_cart">
+                        <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="outerSizing">
+                        <div class="amount_line">
+                            <div>Amount</div>
+                            <div style="width: 56%;"></div>
+                            <div id="rate"></div>
+                        </div>
+                        <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
+                            <div><span> CGST9%</span></div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="sgst_line">
+                            <div>SGST9%</div>
+                            <div style="width: 57%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="total_line">
+                            <div>Total:</div>
+                            <div style="width: 61%;"></div>
+                            <div id="total"></div>
+                        </div>
+                        <div style="margin:10%"></div>
+                        <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);">
+                            <label for="couponcode">
+                                <input id="couponcode" type="text" placeholder="Coupon Code"
+                                    style="outline: none; border: none;font-weight: 300; font-size: 15px;">
+                            </label>
+                        </div>
+                        <div id="goBtn">
+                            <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
+                        </div>
+                        <div></div>
+                        <div id="checkoutBtn">
+                            <input type="button" value="CHECKOUT" id="checkoutInput" onclick="checkOut()">
+                        </div>
+                        <div class="emiAppend"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -305,3 +502,4 @@
 </html>
 <script src="page2.js"></script>
 <script src="cart_page.js"></script>
+<script src='payment.js'></script>
