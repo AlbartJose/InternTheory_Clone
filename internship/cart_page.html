@@ -5,200 +5,223 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="styleHeadFoot.css" rel="stylesheet">
-   <link rel="stylesheet" href="cart_page.css">
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-   <link
-     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-     rel="stylesheet"/>
-    <link href='payment.css' rel='stylesheet' type='text/css'>
-     <title>Online Courses | Intern Theory</title>
-     <style>
-           #container {
-        display: flex;
-        justify-content: center;
-        z-index: 1000;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        position: absolute;
-        background-color:transparent;
-        flex-direction:row;
-        font-family: "lato",ubuntu,helvetica,sans-serif;
-        visibility: hidden;
+    <link rel="stylesheet" href="cart_page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <link href='cart_page.css' rel='stylesheet' type='text/css'>
+    <title>Online Courses | Intern Theory</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            z-index: 1000;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            position: absolute;
+            background-color: transparent;
+            flex-direction: row;
+            font-family: "lato", ubuntu, helvetica, sans-serif;
+            visibility: hidden;
 
-        
-    }
-    #paymentBox{
-        margin-top: 0px;
-        z-index: 10000;
-        width:350px;
-        height:580px;background-color:rgb(223, 30, 46);
-        border: 2px solid black;
-        
-    }
-    .topBox{
-        display: flex;
-        flex-direction:row;
-        width:350px;
-        height:fit-content;
-        color:white;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:100px;
-        height:100px;
-        border-radius:5px;
-        background-color:white;
-        object-fit:contain;
-        margin-left: 25px;
-        margin-top: 25px;
 
-    }
-    .logo img{
-        width:80px;
-        height:80px;
-    }
-    .top_head{
-        font-family: 'Roboto','Ubuntu', sans-serif;
-        font-size:20px;
-        overflow:hidden;
-        margin-left: 20px;
-        
-    }
-    .top_head p:nth-of-type(2){
-        margin-top:-21px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        opacity:0.8;
-    }
-    #amount{
-        font-size:24px !important;
-        margin-top: 10px !important;
-        
-    }
-    #content{
-        background-color:white;
-        width:100%;
-        height:400px;
-        margin-top:10px;
-        overflow-y:scroll;
-        overflow-x: hidden;
-    }
-    .content_heading{
-        margin-left:30px;
-        font-size:14px;
-        color:rgb(136, 136, 136);
-    }
-    .button_1{
-        display: flex;
-        flex-direction: column;
-        text-align:left;
-        margin-left:43px;
-    }
-    .button_vector{
-        display: flex;
-        float: left;
-        margin-top: 8px;
-     }
-     .button_vector_1{
-        display: flex;
-        float: left;
-        margin-top: 1px;
-     }
-    .payment_type{
-        font-size:18px;
-        font-weight:400;
-        margin: 0px;
-        color:rgb(37, 37, 37);
-        margin-top:5px;
-    }
-    .card_options{
-        margin: 0px;
-        margin-top: -10px;
-        color:gray;
-    }
-    .content_button{
-        width:90%;
-        margin-left: 5%;
-        background-color:white;
-        border: 1px solid rgb(212, 212, 212);
-        cursor:pointer;
-        
-    }
-    .content_button_1{
-        width:90%;
-        height:55px;
-        margin-left: 5%;
-        background-color:white;
-        border: 1px solid rgb(212, 212, 212);
-        cursor:pointer;
-        
-    }
-    .card{
-        width:350px;
-        height:120px;
-        display:grid;
-        grid-template: 'a a b'
-                       'c c d';
-    }
+        }
 
-    .card input{
-        height:30px;
-        width:200px;
-        margin:0px;
-        margin-top:0px;
-        border:0px;
-        border-bottom: 1px solid rgb(75, 75, 75);
-    }
-    .card label{
-        font-family: 'Roboto','Ubuntu', sans-serif;
-        font-size:13px;
-        color:rgb(59, 59, 59);
+        #paymentBox {
+            margin-top: 0px;
+            z-index: 10000;
+            width: 350px;
+            height: 580px;
+            background-color: rgb(223, 30, 46);
+            border: 2px solid black;
 
-    }
-    
-    .div1{
-        grid-area: a
-    }
-    .div2{
-        grid-area: b
-    }
-    .div3{
-        grid-area: c
-    }
-    .div4{
-        grid-area: d
-    }
-    #credit_card{
-        margin-top:10px;
-    }
-    .checkbox{
-        margin-top:10px;
-        width:20px;
-        height:20px;
-        float:left;
-        background-color:rgb(223, 30, 46);
-    }
+        }
 
-    .remember{
-        margin-top:10px;
-        color:rgb(66, 66, 66);
-    }
-    #checkout{
-        width:100%;
-        height:50px;
-        background-color:rgb(223, 30, 46);
-        color:azure;
-        font-size: 25px;
-        border:0px;
-        cursor:pointer;
-        margin-top:-30px;
-    }
-    
-     </style>
+        .topBox {
+            display: flex;
+            flex-direction: row;
+            width: 350px;
+            height: fit-content;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: white;
+            object-fit: contain;
+            margin-left: 25px;
+            margin-top: 25px;
+
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .top_head {
+            font-family: 'Roboto', 'Ubuntu', sans-serif;
+            font-size: 20px;
+            overflow: hidden;
+            margin-left: 20px;
+
+        }
+
+        .top_head p:nth-of-type(2) {
+            margin-top: -21px;
+            margin-bottom: 0px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        #amount {
+            font-size: 24px !important;
+            margin-top: 10px !important;
+
+        }
+
+        #content {
+            background-color: white;
+            width: 100%;
+            height: 400px;
+            margin-top: 10px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .content_heading {
+            margin-left: 30px;
+            font-size: 14px;
+            color: rgb(136, 136, 136);
+        }
+
+        .button_1 {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-left: 43px;
+        }
+
+        .button_vector {
+            display: flex;
+            float: left;
+            margin-top: 8px;
+        }
+
+        .button_vector_1 {
+            display: flex;
+            float: left;
+            margin-top: 1px;
+        }
+
+        .payment_type {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 0px;
+            color: rgb(37, 37, 37);
+            margin-top: 5px;
+        }
+
+        .card_options {
+            margin: 0px;
+            margin-top: -10px;
+            color: gray;
+        }
+
+        .content_button {
+            width: 90%;
+            margin-left: 5%;
+            background-color: white;
+            border: 1px solid rgb(212, 212, 212);
+            cursor: pointer;
+
+        }
+
+        .content_button_1 {
+            width: 90%;
+            height: 55px;
+            margin-left: 5%;
+            background-color: white;
+            border: 1px solid rgb(212, 212, 212);
+            cursor: pointer;
+
+        }
+
+        .card {
+            width: 350px;
+            height: 120px;
+            display: grid;
+            grid-template: 'a a b'
+                'c c d';
+        }
+
+        .card input {
+            height: 30px;
+            width: 200px;
+            margin: 0px;
+            margin-top: 0px;
+            border: 0px;
+            border-bottom: 1px solid rgb(75, 75, 75);
+        }
+
+        .card label {
+            font-family: 'Roboto', 'Ubuntu', sans-serif;
+            font-size: 13px;
+            color: rgb(59, 59, 59);
+
+        }
+
+        .div1 {
+            grid-area: a
+        }
+
+        .div2 {
+            grid-area: b
+        }
+
+        .div3 {
+            grid-area: c
+        }
+
+        .div4 {
+            grid-area: d
+        }
+
+        #credit_card {
+            margin-top: 10px;
+        }
+
+        .checkbox {
+            margin-top: 10px;
+            width: 20px;
+            height: 20px;
+            float: left;
+            background-color: rgb(223, 30, 46);
+        }
+
+        .remember {
+            margin-top: 10px;
+            color: rgb(66, 66, 66);
+        }
+
+        #checkout {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(223, 30, 46);
+            color: azure;
+            font-size: 25px;
+            border: 0px;
+            cursor: pointer;
+            margin-top: -30px;
+        }
+        
+    </style>
 
 </head>
 
@@ -214,7 +237,7 @@
                         <span class="material-icons">
                             menu
                         </span>
-    
+
                     </div>
                 </div>
                 <div class="hb2">
@@ -233,7 +256,7 @@
                     </div>
                 </a>
             </div>
-    
+
             <div>
                 <a href="">
                     <div>
@@ -264,7 +287,7 @@
                         <span class="material-icons">
                             playlist_add
                         </span>
-    
+
                     </div>
                     <div class="hb1sideheaddivadiv">
                         Post Internships
@@ -329,7 +352,7 @@
                     <span class="material-icons">
                         menu
                     </span>
-    
+
                 </div>
             </div>
             <div class="hb2">
@@ -348,7 +371,7 @@
                 <div>
                     <a class="sign" href="https://www.interntheory.com/login/student">
                         <div>SIGN IN</div>
-    
+
                     </a>
                 </div>
             </div>
@@ -369,7 +392,7 @@
                         <p id="amount">₹ 0000</p>
                     </div>
                 </div>
-        
+
                 <div id='content'>
                     <div id='red' style="width:100%;height:25px;background-color:rgb(184, 28, 41)"></div>
                     <div>
@@ -387,10 +410,10 @@
                                     <div>
                                         <p class='payment_type'>EMI - Use Your Saved Cards</p>
                                     </div>
-        
+
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button_1' onclick='card()'>
@@ -403,10 +426,10 @@
                                     <div>
                                         <p class='payment_type'>UPI - Google Pay</p>
                                     </div>
-        
+
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button_1' onclick='card()'>
@@ -419,14 +442,14 @@
                                     <div>
                                         <p class='payment_type'>UPI - BHIM</p>
                                     </div>
-        
+
                                 </div>
                             </button>
-        
+
                         </div>
-        
-        
-        
+
+
+
                     </div>
                     <div>
                         <div>
@@ -448,7 +471,7 @@
                                     </div>
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button' onclick='card()'>
@@ -466,7 +489,7 @@
                                     </div>
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button' onclick='card()'>
@@ -484,7 +507,7 @@
                                     </div>
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button' onclick='card()'>
@@ -502,7 +525,7 @@
                                     </div>
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button' onclick='card()'>
@@ -520,7 +543,7 @@
                                     </div>
                                 </div>
                             </button>
-        
+
                         </div>
                         <div>
                             <button class='content_button' onclick='card()'>
@@ -538,70 +561,71 @@
                                     </div>
                                 </div>
                             </button>
-        
-                        </div>
-        
-        
-                    </div>
-        
-                </div>
-        
-            </div>
-        
-        </div>
-           <div id="backgroundBlock">
-               <div class="container">
-                       <div class="left">
-                           <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
-                           <!-- cart things                    -->
-                           <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
 
-                           </div>
-                           <div id="empty_cart">
-                               <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
-                           </div>
                         </div>
-                        <div class="right">
-                            <div class="outerSizing">
-                                <div class="amount_line">
-                                    <div>Amount</div>
-                                    <div style="width: 45%;"></div>
-                                    <div id="rate"></div>
-                                </div>
-                                <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
-                                    <div><span> CGST9%</span></div>
-                                    <div style="width: 50%;"></div>
-                                    <div>₹3600</div>
-                                </div>
-                                <div class="sgst_line">
-                                    <div>SGST9%</div>
-                                    <div style="width: 50%;"></div>
-                                    <div>₹3600</div>
-                                </div>
-                                <div class="total_line">
-                                    <div>Total:</div>
-                                    <div style="width: 60%;"></div>
-                                    <div id="total"></div>
-                                </div>
-                                <div style="margin:10%"></div>
-                                <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);"> 
-                                    <label for="couponcode">
-                                    <input id="couponcode" type="text" placeholder="Coupon Code" style="outline: none; border: none;font-weight: 300; font-size: 15px;">
-                                </label>
-                                </div>
-                                <div id="goBtn">
-                                    <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
-                                </div>
-                                <div></div>
-                                <div id="checkoutBtn">
-                                    <input type="button" value="CHECKOUT" id="checkoutInput" onclick="checkOut()">
-                                </div>
-                                <div class="emiAppend"></div>
-                            </div>
-                            
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="backgroundBlock">
+            <div class="container">
+                <div class="left">
+                    <div style="font-size: 20px; margin-left: 3%;margin-top: 3%;">Cart</div>
+                    <!-- cart things                    -->
+                    <div id="cart_values" style="margin-top: 1%; margin-left: 3%;">
+
+                    </div>
+                    <div id="empty_cart">
+                        <input type="button" value="Empty Cart" id="emptyCart" onclick="empty_cart()">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="outerSizing">
+                        <div class="amount_line">
+                            <div>Amount</div>
+                            <div style="width: 45%;"></div>
+                            <div id="rate"></div>
                         </div>
-               </div>
-           </div>     
+                        <div class="cgst_line" style="border-bottom: 2px solid rgb(165, 162, 162);">
+                            <div><span> CGST9%</span></div>
+                            <div style="width: 50%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="sgst_line">
+                            <div>SGST9%</div>
+                            <div style="width: 50%;"></div>
+                            <div>₹3600</div>
+                        </div>
+                        <div class="total_line">
+                            <div>Total:</div>
+                            <div style="width: 60%;"></div>
+                            <div id="total"></div>
+                        </div>
+                        <div style="margin:10%"></div>
+                        <div class="coupon_code" style="border-bottom: 1px solid rgb(116, 112, 112);">
+                            <label for="couponcode">
+                                <input id="couponcode" type="text" placeholder="Coupon Code"
+                                    style="outline: none; border: none;font-weight: 300; font-size: 15px;">
+                            </label>
+                        </div>
+                        <div id="goBtn">
+                            <input type="button" value="GO" id="goInput" onclick="ApplyPromo()">
+                        </div>
+                        <div></div>
+                        <div id="checkoutBtn">
+                            <input type="button" value="CHECKOUT" id="checkoutInput" onclick="checkOut()">
+                        </div>
+                        <div class="emiAppend"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
 
 
