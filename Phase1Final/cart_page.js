@@ -9,7 +9,8 @@ function appendCart(el) {
     divname.setAttribute("Id", "divName")
     var divprice = document.createElement('div');
     divname.innerHTML = `${el.name}    `;
-    divxprice = document.createElement("div")
+    var divxprice = document.createElement("div")
+    divxprice.setAttribute("Id" , "divXPrice")
     divxprice.innerHTML = `₹${el.xprice}`
     divprice.innerHTML = `₹${el.price}`;
     var btn = document.createElement("button");
@@ -65,8 +66,10 @@ function ApplyPromo() {
 
 function checkOut() {
     var container = document.getElementById("container");
-    console.log(1);
     container.style.visibility = 'visible';
+    var forBg = document.getElementById("backgroundBlock")
+    forBg.style.opacity = ".1"
+    forBg.style.backgroundColor = "black"
 }
 
 function removeFromCart(obj) {
@@ -126,7 +129,7 @@ function card() {
     content.append(rem);
     let checkout = document.createElement('button');
     checkout.setAttribute('id', 'checkout');
-    checkout.innerHTML = pr.innerHTML;
+    checkout.innerHTML = `PAY ${pr.textContent}`;
     console.log("Hi", pr.innerHTML);
     paymentBox.append(checkout);
     content.style.overflow = 'hidden';
