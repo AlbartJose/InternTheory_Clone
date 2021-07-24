@@ -11,181 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <title></title>
 </head>
-<style>
-    #container {
-        display: flex;
-        justify-content: center;
-        z-index: 1000;
-        height: 100%;
-        width: 100%;
-        margin: 0 auto;
-        position: absolute;
-        background-color:yellowgreen;
-        align-items: center;
-        flex-direction:row;
-        font-family: "lato",ubuntu,helvetica,sans-serif;
-
-        
-    }
-    #paymentBox{
-        z-index: 10000;
-        width:350px;
-        height:500px;background-color:rgb(223, 30, 46);
-        
-    }
-    .topBox{
-        display: flex;
-        flex-direction:row;
-        width:350px;
-        height:fit-content;
-        color:white;
-    }
-    .logo{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:100px;
-        height:100px;
-        border-radius:5px;
-        background-color:white;
-        object-fit:contain;
-        margin-left: 25px;
-        margin-top: 25px;
-
-    }
-    .logo img{
-        width:80px;
-        height:80px;
-    }
-    .top_head{
-        font-family: 'Roboto','Ubuntu', sans-serif;
-        font-size:20px;
-        overflow:hidden;
-        margin-left: 20px;
-        
-    }
-    .top_head p:nth-of-type(2){
-        margin-top:-21px;
-        margin-bottom: 0px;
-        font-size: 14px;
-        opacity:0.8;
-    }
-    #amount{
-        font-size:24px !important;
-        margin-top: 10px !important;
-        
-    }
-    #content{
-        background-color:white;
-        width:100%;
-        height:400px;
-        margin-top:10px;
-        overflow-y:scroll;
-        overflow-x: hidden;
-    }
-    .content_heading{
-        margin-left:30px;
-        font-size:14px;
-        color:rgb(136, 136, 136);
-    }
-    .button_1{
-        display: flex;
-        flex-direction: column;
-        text-align:left;
-        margin-left:43px;
-    }
-    .button_vector{
-        display: flex;
-        float: left;
-        margin-top: 8px;
-     }
-     .button_vector_1{
-        display: flex;
-        float: left;
-        margin-top: 1px;
-     }
-    .payment_type{
-        font-size:18px;
-        font-weight:400;
-        margin: 0px;
-        color:rgb(37, 37, 37);
-        margin-top:5px;
-    }
-    .card_options{
-        margin: 0px;
-        margin-top: -10px;
-        color:gray;
-    }
-    .content_button{
-        width:90%;
-        margin-left: 5%;
-        background-color:white;
-        border: 1px solid rgb(212, 212, 212);
-        
-    }
-    .content_button_1{
-        width:90%;
-        height:55px;
-        margin-left: 5%;
-        background-color:white;
-        border: 1px solid rgb(212, 212, 212);
-        
-    }
-    .card{
-        width:350px;
-        height:120px;
-        display:grid;
-        grid-template: 'a a b'
-                       'c c d';
-    }
-
-    .card input{
-        height:30px;
-        width:200px;
-        margin:0px;
-        margin-top:0px;
-        border:0px;
-        border-bottom: 1px solid rgb(75, 75, 75);
-    }
-    .card label{
-        font-family: 'Roboto','Ubuntu', sans-serif;
-        font-size:13px;
-        color:rgb(59, 59, 59);
-
-    }
-    
-    .div1{
-        grid-area: a
-    }
-    .div2{
-        grid-area: b
-    }
-    .div3{
-        grid-area: c
-    }
-    .div4{
-        grid-area: d
-    }
-    #credit_card{
-        margin-top:10px;
-    }
-    .checkbox{
-        margin-top:10px;
-        width:20px;
-        height:20px;
-        float:left;
-        background-color:rgb(223, 30, 46);
-    }
-
-    .remember{
-        margin-top:10px;
-        color:rgb(66, 66, 66);
-    }
-    
-    
-    
-
-</style>
+<style></style>
 
 <body>
     <div id = container>
@@ -227,7 +53,7 @@
                         <button class='content_button_1' onclick='card()'>
                             <div class='button_vector_1'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    account_balance_wallet
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -243,7 +69,7 @@
                         <button class='content_button_1' onclick='card()'>
                             <div class='button_vector_1'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    account_balance_wallet
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -283,7 +109,7 @@
                         <button class='content_button' onclick='card()'>
                             <div class='button_vector'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    account_balance_wallet
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -301,7 +127,7 @@
                         <button class='content_button' onclick='card()'>
                             <div class='button_vector'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    language
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -319,7 +145,7 @@
                         <button class='content_button' onclick='card()'>
                             <div class='button_vector'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    payments
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -337,7 +163,7 @@
                         <button class='content_button' onclick='card()'>
                             <div class='button_vector'>
                                 <span class="material-icons" style="color:rgb(233, 54, 69)">
-                                    credit_card
+                                    account_balance
                                 </span>
                             </div>
                             <div class='button_1'>
@@ -386,6 +212,8 @@
 <script>
     var content = document.getElementById('content');
     var red = document.getElementById('red');
+    var paymentBox = document.getElementById('paymentBox');
+
 
     function card(){
         content.innerHTML = null;
@@ -422,7 +250,11 @@
     rem.innerHTML = 'Remember Card';
     content.append(rem);
     let checkout = document.createElement('button');
-    checkout.innerHTML = ''
+    checkout.setAttribute('id','checkout');
+    checkout.innerHTML = '0000';
+    paymentBox.append(checkout);
+    content.style.overflow = 'hidden';
+
 
     }
 

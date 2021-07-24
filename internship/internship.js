@@ -122,7 +122,8 @@ function showInternships(e) {
         console.log(i);
     
         let toggleDiv = document.createElement('div');
-        toggleDiv.setAttribute('class','toggle_div')
+        toggleDiv.setAttribute('id', 'toggle_div')
+    
     let fb = document.createElement('a');
     fb.setAttribute('class', 'toggle_buttons');
     fb.href = 'https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.interntheory.com%2F';
@@ -147,19 +148,21 @@ function showInternships(e) {
     whatsapp.href = 'https://api.whatsapp.com/send?text=Hey%2C%0D%0AI%20came%20across%20this%20awesome%20opportunity%20that%20might%20interest%20you%21%20Check%20it%20out%20here%3A%20www.interntheory.com/internship//courses?utm_source=internshipslist&utm_medium=webpage';
     whatsapp.innerHTML = "<img src = 'https://image.flaticon.com/icons/png/512/124/124034.png' />"
     whatsapp.setAttribute('class', 'toggle_buttons');
-    toggleDiv.append(whatsapp);
+        toggleDiv.append(whatsapp);
+        
         if (i % 2 == 1) {
             toggleDiv.style.visibility = 'visible';
             console.log('*')
-        } else {
+        } else  {
             toggleDiv.style.visibility = 'hidden';
             console.log('/')
         }
-    
+    share.append(toggleDiv);
 
    
     
     }
+     
     
 
 }
