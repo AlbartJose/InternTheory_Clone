@@ -1,5 +1,16 @@
 const student_btn = document.getElementById("studentBtn")
 const company_btn = document.getElementById("companyBtn")
+function getstudentlogin(){
+  studentTab.style.display = "block"
+  student_btn.style.color = "#087CDD"
+  student_btn.style.borderBottom = "1.8px solid #087CDD"
+}
+function getCompanylogin(){
+  companyTab.style.display = "block"
+  company_btn.style.color = "#087CDD"
+  company_btn.style.borderBottom = "1.8px solid #087CDD"
+}
+
 company_btn.addEventListener("click", function change(){
   let studentTab = document.getElementById("studentTab")
   let companyTab = document.getElementById("companyTab")

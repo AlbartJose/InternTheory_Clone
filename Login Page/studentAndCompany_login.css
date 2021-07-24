@@ -78,6 +78,7 @@ label > input {
     border: none;
     font-size: 15px;
     outline: none;
+    width: 100%;
 }
 #form .email{
     font: inherit;
@@ -143,4 +144,9 @@ label > span{
     font-size: 0.875rem;
     height: 35px;
     cursor: pointer;
+}
+.third_block{
+    margin-top: 2% !important;
+    padding: 1% !important;
+    block-size:30px;
 }

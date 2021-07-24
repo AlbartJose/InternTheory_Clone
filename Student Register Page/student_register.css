@@ -28,7 +28,7 @@
 input {
     border: none;
     font-size: 15px;
-    width: 60%;
+    width: 100%;
     outline: none;
 }
 .main_block{
@@ -113,4 +113,9 @@ div > .second_block{
 a{
         text-decoration: none;
         color: rgb(48, 77, 240);
+}
+.third_block{
+    margin: 0% !important;
+    padding: 1% !important;
+    block-size:30px;
 }
