@@ -27,6 +27,7 @@ input {
     padding: 30px 30px 0px;
     width: 30%;
     margin-left: 35%;
+    margin-bottom: 2%;
     background-color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -104,7 +105,7 @@ div > .second_block{
     margin-top: 3%;
     margin-left: 12.5%;
     margin-right: 12.5%;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     border-radius: 5px;
     align-items: center;
     background-color: white;
