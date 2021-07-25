@@ -52,7 +52,7 @@ function netContent() {
 
 }
 
-var pr = document.getElementById("total");
+const pr = document.getElementById("total");
 pr.innerHTML = `₹ ${price}`;
 amt.innerHTML = pr.innerHTML;
 function ApplyPromo() {
@@ -86,18 +86,16 @@ function empty_cart() {
     showCart();
 }
 
-var content = document.getElementById('content');
-var red = document.getElementById('red');
-var paymentBox = document.getElementById('paymentBox');
-var total = document.getElementById("total");
-
+const content = document.getElementById('content');
+const red = document.getElementById('red');
+const paymentBox = document.getElementById('paymentBox');
+const p_amt = document.getElementById("amount")
 
 function card() {
-    console.log("----444---");
     content.innerHTML = null;
     content.append(red);
-    var card = document.createElement('div');
-    card.setAttribute('id', 'credit_card')
+    const card = document.createElement('div');
+    card.setAttribute('Id', 'credit_card')
     card.innerHTML = `<div class = 'card'>
     <div class = 'div1'>
     <label for='cardNumber'>Card Number</label><br>
@@ -115,23 +113,22 @@ function card() {
     <label for = 'cvv'>Cvv</label><br>
     <input type="text" id="cvv" placeholder="Cvv" style="width:60px;">
     </div>
-
+    
     </div>`;
     content.append(card);
-
+    
     let checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.setAttribute('class', 'checkbox')
     content.append(checkbox);
-    let rem = document.createElement('div');
+    const rem = document.createElement('div');
     rem.setAttribute('class', 'remember')
     rem.innerHTML = 'Remember Card';
     content.append(rem);
-    let checkout = document.createElement('button');
-    checkout.setAttribute('id', 'checkout');
-    checkout.innerHTML = `PAY ${pr.textContent}`;
-    console.log("Hi", pr.innerHTML);
+    const checkout = document.createElement('button');
+    checkout.setAttribute('Id', 'checkout');
+    checkout.innerHTML = `PAY ${pr.innerHTML}`;
     paymentBox.append(checkout);
     content.style.overflow = 'hidden';
-
+    p_amt.innerHTML = pr.innerHTML
 }
