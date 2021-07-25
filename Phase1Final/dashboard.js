@@ -11,16 +11,6 @@ var applications = [
         city: 'mumbai',
         stipend: '8000 per month'
         
-    },
-    {
-        img: 'https://assets.interntheory.com/uploads/company/logos/9a1b5a51b4a3fea4078b0e13e877a8ec422fdd21.jpg',
-        course: 'PHP Developer - Intern',
-        companyName: 'Bitpastel Solution Pvt Ltd',
-        type: 'Work From Home',
-        category: 'Software Development',
-        city: 'mumbai',
-        stipend: '7500 - 10000 per month'
-        
     }];
 
     if (localStorage.getItem('applications') == null) {
