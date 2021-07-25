@@ -1,5 +1,8 @@
+let i = 0;
+
 function itstark(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name: "IT Starter Pack (4 Courses)",
         xprice: 32999,
@@ -21,19 +24,26 @@ function itstark(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function finance(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Finance Starter Pack",
-        xprice: 32999,
+        xprice: 23999,
         price:11999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -47,20 +57,27 @@ function finance(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function digital(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Digital Marketing Course",
-        xprice: 32999,
+        xprice: 11999,
         price:5999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -74,21 +91,28 @@ function digital(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function stock(event){
     event.preventDefault()
-
+    icon.style.marginTop = "initial"
+    
     let cart = {
         name:"Stock Market Course",
-        xprice: 32999,
+        xprice: 11999,
         price:15999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -102,17 +126,24 @@ function stock(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function data(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Data Analytics",
-        xprice: 32999,
+        xprice: 11999,
         price:5999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
     
@@ -130,16 +161,23 @@ function data(event){
     }
     arr.push(cart);
     
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function web(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Web Development Course",
-        xprice: 32999,
+        xprice: 7999,
         price:3999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
     
@@ -156,17 +194,24 @@ function web(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function android(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Android App Development",
-        xprice: 32999,
-        price:15999
+        xprice: 7999,
+        price:3999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
     
@@ -183,20 +228,27 @@ function android(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function itstart2(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"IT Starter Pack-2 (2 Courses)",
-        xprice: 32999,
-        price:15999
+        xprice: 7999,
+        price:3999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -210,20 +262,27 @@ function itstart2(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function advanced(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"Advanced Excel Course",
-        xprice: 32999,
-        price:15999
+        xprice: 5999,
+        price:2999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -237,20 +296,27 @@ function advanced(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
 function rpro(event){
     event.preventDefault()
+    icon.style.marginTop = "initial"
     let cart = {
         name:"R Programming Course",
-        xprice: 32999,
-        price:15999
+        xprice: 5999,
+        price:2999
     }
-
+    
     let arr;
     arr = localStorage.getItem("cart");
-
+    
     if (arr == null) {
         arr = [];   
     } else {
@@ -264,10 +330,17 @@ function rpro(event){
         return;
     }
     arr.push(cart);
+    let div2 = document.getElementById('cartNum');
+    div2.innerHTML = `${++i}`
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     
     localStorage.setItem("cart", JSON.stringify(arr));
 }
-let icon = document.getElementById("shopCart")
+const    icon = document.getElementById("shopCart")
 icon.addEventListener("click", function(){
     window.location.href ="cart_page.html"
 })
+icon.style.marginTop = "10%"

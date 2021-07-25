@@ -54,6 +54,7 @@
 }
 #goBtn{
     margin: 0;
+    cursor: pointer;
 }
 #goBtn > #goInput{
     border: none;
@@ -65,6 +66,7 @@
     height: 30px;
     margin-top: 0;
     font-weight: 600;
+    cursor: pointer;
 }
 #checkoutBtn > #checkoutInput{
     border: none;
@@ -77,6 +79,7 @@
     margin-left: 5%;
     margin-top: 5%;
     font-weight: 600;
+    cursor: pointer;
 }
 #empty_cart > #emptyCart{
     border: none;
@@ -91,11 +94,12 @@
     font-weight: 600;
 }
 #cart_values button{
- border-radius: 50%;
- border: none;
- background-color: #DF1E2E;
- color: white;
- font-weight: 600;
+    border-radius: 50%;
+    border: none;
+    background-color: #DF1E2E;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
 }
 #cart_values > div{
     width: 100%;
@@ -333,4 +337,4 @@
 #shopCart > div{
     width: 89% !important;
     height: fit-content !important;
-}
+} 

@@ -126,3 +126,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+#shopCart > div{
+    width: 89% !important;
+    height: fit-content !important;
+} 
