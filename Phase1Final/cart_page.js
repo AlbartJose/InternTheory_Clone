@@ -38,9 +38,11 @@ function showCart() {
 showCart();
 
 function netContent() {
+    let pr = document.getElementById("total");
     let divNet = document.getElementById("rate");
     divNet.innerHTML = null;
     let div1 = document.createElement('div');
+    div1.setAttribute("Id", "divAmt")
     let div2 = document.getElementById('cartNum');
     div2.style.textAlign ="center"
     div2.style.borderRadius = "50%"
@@ -49,18 +51,17 @@ function netContent() {
     div1.innerHTML = `₹${price}`;
     div2.innerHTML = `${num}`;
     divNet.append(div1);
+    pr.innerHTML = div1.innerHTML
     
 }
 
-const pr = document.getElementById("total");
-pr.innerHTML = `₹ ${price}`;
-amt.innerHTML = pr.innerHTML;
 function ApplyPromo() {
+    let pr = document.getElementById("total");
     const promo = document.getElementById("couponcode").value;
     if (promo == "masai30") {
         price = Math.floor(price * .7);
     }
-    pr.innerHTML = `₹ ${price}`;
+    pr.innerHTML = `₹${price}`
     
 }
 
@@ -73,12 +74,16 @@ function checkOut() {
 }
 
 function removeFromCart(obj) {
+    let divAmt = document.getElementById("divAmt")
+    let pr = document.getElementById("total")
     let data = JSON.parse(localStorage.getItem("cart"));
     var pos = data.map(function (e) {
         return e.name;
     }).indexOf(`${obj.name}`);
     data.splice(pos, 1);
     localStorage.setItem('cart', JSON.stringify(data));
+    pr.innerHTML = null
+    divAmt.innerHTML = null
     showCart();
 }
 function empty_cart() {
@@ -94,8 +99,10 @@ const content = document.getElementById('content');
 const red = document.getElementById('red');
 const paymentBox = document.getElementById('paymentBox');
 const p_amt = document.getElementById("amount")
-
+const pr = document.getElementById('total');
+amount.innerHTML = pr.innerHTML;
 function card() {
+
     content.innerHTML = null;
     content.append(red);
     const card = document.createElement('div');
@@ -130,7 +137,7 @@ function card() {
     rem.innerHTML = 'Remember Card';
     content.append(rem);
     const checkout = document.createElement('button');
-    checkout.addEventListener('click',success)
+    checkout.addEventListener('click',success);
     checkout.setAttribute('Id', 'checkout');
     checkout.innerHTML = `PAY ${pr.innerHTML}`;
     paymentBox.append(checkout);
