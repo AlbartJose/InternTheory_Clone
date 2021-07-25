@@ -1,0 +1,132 @@
+.block1_img{
+    background: url(https://assets.interntheory.com/creative/courses/listpage/Course-bannerbg.jpg) center center / cover no-repeat;
+    padding: 0px 10%;
+}
+#block_2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.block2_1,.block2_2{
+    width: 80%;
+}
+.block2_1_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.block2_1_1 > h6{
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    padding: 0%;
+}
+.block2_1_1 > p{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 550;
+    letter-spacing: 0.0075em;
+    color: slategray;
+    margin:0 0 3%;
+    padding: 0%;
+    
+}
+.multidiv{
+    max-width: 23%;
+    background-color: white;
+    border: 5px;
+    margin: 1%;
+    border-radius: 5px;
+    
+}
+.image > img{
+    background: cover;
+    border-radius: 5px;
+    height: 140px;
+    width: 100%;
+
+}
+.hp{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.courseHead,.coursePara{
+    margin: 0;
+    padding: 0;
+}
+.courseHead > h2{
+    line-height: 1.2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    margin: 0;
+}
+.coursePara > p{
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.01071em;
+    color:rgba(0, 0, 0, 0.54);
+}
+.coursePara{
+    border-bottom: .5px dashed silver;
+}
+.wrapRates{
+ display: inline-block;
+ margin-left: 47%;
+}
+.emiThing > p{
+    width: 100%;
+    color: rgb(255, 179, 38);
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.knowAndAdd{
+    margin: 2%;
+}
+.knowAndAdd > .first{
+    text-decoration: none;
+    padding: 4px 8px;
+    min-width: 64px;
+    font-size: 0.8125rem;
+    color: #087CDD;
+    line-height: 1.75;
+    font-weight: 900;
+    border-radius: 4px;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    margin-left: 4%;
+}
+.knowAndAdd > .second{
+    text-decoration: none;
+    line-height: 1.75;
+    font-weight: 900;
+    border-radius: 4px;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 4px 8px;
+    min-width: 64px;
+    font-size: 0.8125rem;
+    background-color:#DF1E2E;;
+    color: white;
+}
+.block2_2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#shopCart > div{
+    width: 89% !important;
+    height: fit-content !important;
+} 
