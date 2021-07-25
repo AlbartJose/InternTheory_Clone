@@ -126,9 +126,14 @@ function card() {
     rem.innerHTML = 'Remember Card';
     content.append(rem);
     const checkout = document.createElement('button');
+    checkout.addEventListener('click',success)
     checkout.setAttribute('Id', 'checkout');
     checkout.innerHTML = `PAY ${pr.innerHTML}`;
     paymentBox.append(checkout);
     content.style.overflow = 'hidden';
     p_amt.innerHTML = pr.innerHTML
+}
+
+function success(){
+    window.location.href = 'success.html'
 }
