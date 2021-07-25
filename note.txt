@@ -1,7 +1,0 @@
-PHASE - 1 :
-
-Front Page
-Internship
-Register & Login
-
-
