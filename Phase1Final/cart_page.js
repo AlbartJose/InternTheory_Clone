@@ -33,23 +33,23 @@ function showCart() {
         appendCart(el);
     });
     netContent();
-
+    
 }
 showCart();
 
 function netContent() {
-    var divNet = document.getElementById("rate");
+    let divNet = document.getElementById("rate");
     divNet.innerHTML = null;
-    div1 = document.createElement('div');
-    div2 = document.getElementById('cartNum');
+    let div1 = document.createElement('div');
+    let div2 = document.getElementById('cartNum');
+    div2.style.textAlign ="center"
+    div2.style.borderRadius = "50%"
+    div2.style.color = "white"
+    div2.style.backgroundColor = "#DF1E2E"
     div1.innerHTML = `₹${price}`;
     div2.innerHTML = `${num}`;
     divNet.append(div1);
-
-
-    // var shopIcon = document.getElementById("shopCart")
-    // shopIcon.append(div2)
-
+    
 }
 
 const pr = document.getElementById("total");
@@ -61,7 +61,7 @@ function ApplyPromo() {
         price = Math.floor(price * .7);
     }
     pr.innerHTML = `₹ ${price}`;
-
+    
 }
 
 function checkOut() {
@@ -82,7 +82,11 @@ function removeFromCart(obj) {
     showCart();
 }
 function empty_cart() {
+    let shopcar = document.getElementById("shopCart")
+    shopcar.style.marginTop = "10%"
     localStorage.clear()
+    let cartval = document.getElementById("cartNum")
+    cartval.innerHTML = null
     showCart();
 }
 
