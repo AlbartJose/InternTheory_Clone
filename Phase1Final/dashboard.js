@@ -98,7 +98,7 @@ function myCourses() {
 
     let catalogue = document.createElement('div');
     catalogue.setAttribute('class', 'catalogue')
-    catalogue.innerHTML = `<a href = 'online_courses.html' style="color:#087CDD">UPGRADE YOURSELF NOW</a>`;
+    catalogue.innerHTML = `<a href = 'online_courses.html' style="color:#087CDD;text-decoration:none">UPGRADE YOURSELF NOW</a>`;
     div.append(catalogue);
 
     dashboard.append(div);
