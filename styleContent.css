@@ -3,7 +3,7 @@
 }
 .conmpb1 {
   display: flex;
-  height: 430px;
+  height: 26.875rem;
   background: linear-gradient(
       0deg,
       rgb(68, 100, 120, 0.6),
@@ -19,12 +19,12 @@
   height: 50%;
 }
 .conmpb1ft1 {
-  font-size: 25px;
+  font-size: 1.563rem;
   color: white;
   padding: 5px;
 }
 .conmpb1ft1 + div {
-  font-size: 15px;
+  font-size: 0.938rem;
   color: white;
 }
 .conmpb1ft1 > span {
@@ -34,7 +34,7 @@
   width: 95%;
   height: 100px;
   background-color: rgba(255, 255, 255, 0.77);
-  margin-top: 30px;
+  margin-top: 1.875rem;
   border-radius: 10px;
   display: flex;
   padding-right: 2.5%;
@@ -53,12 +53,12 @@
   padding: 5px;
   margin: 3px;
   border: none;
-  font-size: 17px;
+  font-size: 1rem;
   background-color: inherit;
   border-bottom: 1px solid gray;
 }
 .conmpb1SelectOr {
-  max-width: 50px;
+  max-width: 3.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,7 +76,7 @@
 }
 #mpSearchBox {
   border: none;
-  min-width: 50px;
+  min-width: 3.125rem;
   border-bottom: 1px solid gray;
   width: 96%;
   margin: 5px 0px 5px 2%;
@@ -95,11 +95,11 @@
   border-radius: 5px;
 }
 .conmpb3 {
-  height: 500px;
-  padding: 50px;
+  height: 31.25rem;
+  padding: 3.125rem;
   background-color: rgb(247, 252, 254);
   text-align: center;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 700;
 }
 .conmpb3 > div > span {
@@ -107,10 +107,10 @@
 }
 .mpgrid1 {
   display: grid;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 90%;
   grid-template-columns: repeat(4, 25%);
-  grid-column-gap: 8px;
+  grid-column-gap:0.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -120,11 +120,11 @@
 }
 
 .conmpb4 {
-  height: 300px;
-  padding: 50px;
+  height: 18.75rem;
+  padding: 3.125rem;
   background-color: rgb(238, 238, 238);
   text-align: center;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 700;
 }
 .conmpb4 > div > span {
@@ -133,10 +133,10 @@
 
 .mpgrid2 {
   display: grid;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   width: 90%;
   grid-template-columns: repeat(3, 33.3%);
-  grid-column-gap: 8px;
+  grid-column-gap: 0.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -145,8 +145,8 @@
 }
 .conmpb2 {
   display: flex;
-  height: 370px;
-  padding: 30px;
+  height: 23.125rem;
+  padding: 1.875rem;
   background-color: white;
   justify-content: center;
 }
@@ -159,8 +159,8 @@
 
 .conmpb5 {
   display: flex;
-  height: 300px;
-  padding: 30px;
+  height: 18.75rem;
+  padding: 1.875rem;
   background-color: white;
   justify-content: center;
 }
@@ -196,7 +196,7 @@
 }
 .conmpb6 {
   display: flex;
-  padding: 30px;
+  padding: 1.875rem;
   background-color: rgb(238, 238, 238);
   justify-content: center;
   align-items: center;
@@ -205,18 +205,18 @@
   display: flex;
   width: 80%;
   height: 80%;
-  padding: 30px;
+  padding: 1.875rem;
 }
 .conmpb6b1slide {
   height: auto;
-  flex: 0 0 36px;
+  flex: 0 0 2.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .conmpb6b1slide > div {
-  width: 36px;
-  height: 36px;
+  width: 2.25rem;
+  height: 2.25rem;
   color: black;
   display: flex;
   justify-content: center;
@@ -235,7 +235,7 @@
   display: flex;
 }
 .conmpb6b1con > div {
-  min-height: 140px;
+  min-height: 8.75rem;
   display: flex;
   justify-content: center;
   align-items: center;

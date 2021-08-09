@@ -6,7 +6,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 900;
     
 }
@@ -18,7 +18,7 @@
     margin: 5%;
     height: fit-content;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 0.313rem;
 }
 .left{
     width: 70%;
@@ -37,7 +37,7 @@
 .outerSizing{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.313rem;
 }
 .amount_line ,.cgst_line,.sgst_line,.total_line{
     display: flex;
@@ -58,24 +58,24 @@
 }
 #goBtn > #goInput{
     border: none;
-    font-size: 13px;
+    font-size: 0.813rem;
     color: white;
     background-color: #DF1E2E;
     border-radius: 10%;
     width: 27%;
-    height: 30px;
+    height: 1.875rem;
     margin-top: 0;
     font-weight: 600;
     cursor: pointer;
 }
 #checkoutBtn > #checkoutInput{
     border: none;
-    font-size: 13px;
+    font-size: 0.813rem;
     color: white;
     background-color: #DF1E2E;
     border-radius: 3%;
     width: 90%;
-    height: 35px;
+    height: 2.188rem;
     margin-left: 5%;
     margin-top: 5%;
     font-weight: 600;
@@ -83,12 +83,12 @@
 }
 #empty_cart > #emptyCart{
     border: none;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
     background-color: #DF1E2E;
     border-radius: 3%;
     width: 20%;
-    height: 35px;
+    height: 2.188rem;
     margin-left: 80%;
     margin-top: 5%;
     font-weight: 600;
@@ -111,12 +111,12 @@
     margin-bottom: 5%;
     flex-flow: wrap;
     border-bottom: 1.8px dashed silver;
-    gap: 5px;
+    gap: 0.313rem
 }
 
 #cart_values #divXPrice{
     text-decoration: line-through;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: rgb(158, 154, 154);
     display: flex;
     justify-content: center;
@@ -155,7 +155,7 @@
 .topBox {
     display: flex;
     flex-direction: row;
-    width: 350px;
+    width: 21.875rem;
     height: fit-content;
     color: white;
 }
@@ -164,54 +164,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem;
     border-radius: 5px;
     background-color: white;
     object-fit: contain;
-    margin-left: 25px;
-    margin-top: 25px;
+    margin-left: 1.563rem;
+    margin-top: 1.563rem;
 
 }
 
 .logo img {
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
 }
 
 .top_head {
     font-family: 'Roboto', 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     overflow: hidden;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 
 }
 
 .top_head p:nth-of-type(2) {
     margin-top: -21px;
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 0.875rem;
     opacity: 0.8;
 }
 
 #amount {
-    font-size: 24px !important;
-    margin-top: 10px !important;
+    font-size: 1.5rem !important;
+    margin-top: 0.625rem !important;
 
 }
 
 #content {
     background-color: white;
     width: 100%;
-    height: 323px;
+    height: 20.188rem;
     margin-top: 10px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .content_heading {
-    margin-left: 30px;
-    font-size: 14px;
+    margin-left: 1.875rem;
+    font-size: 0.875rem;
     color: rgb(136, 136, 136);
 }
 
@@ -219,13 +219,13 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-left: 43px;
+    margin-left: 2.688;
 }
 
 .button_vector {
     display: flex;
     float: left;
-    margin-top: 8px;
+    margin-top: 0.5rem;
 }
 
 .button_vector_1 {
@@ -235,7 +235,7 @@
 }
 
 .payment_type {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     margin: 0px;
     color: rgb(37, 37, 37);
@@ -259,7 +259,7 @@
 
 .content_button_1 {
     width: 90%;
-    height: 55px;
+    height: 3.438rem;
     margin-left: 5%;
     background-color: white;
     border: 1px solid rgb(212, 212, 212);
@@ -268,16 +268,16 @@
 }
 
 .card {
-    width: 350px;
-    height: 120px;
+    width: 21.875rem;
+    height: 7.5rem;
     display: grid;
     grid-template: 'a a b'
         'c c d';
 }
 
 .card input {
-    height: 30px;
-    width: 150px !important;
+    height: 1.875rem;
+    width: 9.375rem !important;
     margin: 0px;
     margin-top: 0px;
     border: 0px;
@@ -286,7 +286,7 @@
 
 .card label {
     font-family: 'Roboto', 'Ubuntu', sans-serif;
-    font-size: 13px;
+    font-size: 0.813rem;
     color: rgb(59, 59, 59);
 
 }
@@ -312,24 +312,24 @@
 }
 
 .checkbox {
-    margin-top: 10px;
-    width: 20px;
-    height: 20px;
+    margin-top: 0.625rem;
+    width: 1.25rem;
+    height: 1.25rem;
     float: left;
     background-color: rgb(223, 30, 46);
 }
 
 .remember {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: rgb(66, 66, 66);
 }
 
 #checkout {
     width: 100%;
-    height: 50px;
+    height: 3.125rem;
     background-color: rgb(223, 30, 46);
     color: azure;
-    font-size: 25px;
+    font-size: 1.563rem;
     border: 0px;
     cursor: pointer;
     margin-top: -30px;

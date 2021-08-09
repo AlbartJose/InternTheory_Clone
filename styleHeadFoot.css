@@ -14,7 +14,7 @@ body {
 }
 .header > div {
   display: flex;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 24px 8px 1.5rem;
   height: 48px;
 }
 .header > div > div {
@@ -34,7 +34,7 @@ body {
 }
 .hb4 {
   display: flex;
-  flex: 0 0 132px;
+  flex: 0 0 12rem;
 }
 .sign {
   text-decoration: none;
@@ -45,7 +45,7 @@ body {
   padding-left: 12px;
   background-color: red;
   color: white;
-  font-size: 16px;
+  font-size: 1rem;
   border-radius: 5px;
   font-weight: 500;
 }
@@ -54,25 +54,25 @@ body {
 }
 #shopCart,
 .hb1list {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   padding: 12px;
   color: black;
-  border-radius: 24px;
+  border-radius: 1.5rem;
 }
 #shopCart {
   padding: 0px 12px 12px 12px;
 }
 #shopCart > div {
   height: 12px;
-  width: 24px;
+  width: 1.5rem;
 }
 #shopCart > div > div {
-  height: 16px;
-  width: 16px;
+  height: 1rem;
+  width: 1rem;
   background-color: red;
   z-index: 110;
-  border-radius: 16px;
+  border-radius: 1rem;
   text-align: center;
   font-weight: 700;
   font-size: 12px;
@@ -109,7 +109,7 @@ body {
 }
 .hb1sidehead {
   display: flex;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 24px 8px 1.5rem;
 }
 .hb1sidehead ~ div {
   width: 100%;
@@ -121,19 +121,19 @@ body {
 }
 .hb1sidehead ~ div > a {
   width: 100%;
-  height: 24px;
+  height: 1.5rem;
   display: flex;
-  padding: 11px 16px 11px 16px;
+  padding: 11px 16px 11px 1rem;
   text-decoration: none;
   color: black;
 }
 .hb1sidehead ~ div > a > div {
-  padding-right: 32px;
+  padding-right: 2rem;
   display: flex;
   align-items: center;
 }
 .hb1sideheaddivadiv {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -161,14 +161,14 @@ body {
 }
 .connect {
   width: 6%;
-  height: 160px;
+  height: 10rem;
   display: flex;
-  min-width: 60px;
+  min-width: 3.75rem;
   flex-direction: column;
   align-items: center;
 }
 .connect > div {
-  height: 30px;
+  height: 1.875rem;
   width: auto;
   padding-top: 10px;
 }
@@ -176,7 +176,7 @@ body {
   width: 94%;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .info > div {
   flex: 30% 0 0;
@@ -186,7 +186,7 @@ body {
 }
 .footb2 {
   justify-content: space-around;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .footb3 {
   justify-content: space-around;
