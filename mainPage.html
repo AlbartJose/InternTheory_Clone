@@ -227,8 +227,8 @@
                 <div class="conmpb1ft1">Let's Get You <span>Ready</span></div>
                 <div>The One Stop to Upgrade Your Resume. Expand Your Skillset. Do An Internship. Get Placed</div>
                 <div class="conmpb1Select">
-                    <div onclick="go()">
-                        <select id="city">
+                    <div>
+                        <select id="city" onchange="storeCity()">
                             <option>Cities..</option>
                             <option>Delhi</option>
                             <option>Bangalore</option>
@@ -237,8 +237,8 @@
                             <option>Chennai</option>
                         </select>
                     </div>
-                    <div onclick="go()">
-                        <select>
+                    <div>
+                        <select id="type" onchange="storeType()">
                             <option>Types..</option>
                             <option>Part Time</option>
                             <option>Full Time</option>
@@ -246,11 +246,11 @@
 
                         </select>
                     </div>
-                    <div onclick="go()">
-                        <select>
+                    <div>
+                        <select id="pref" onchange="storePref()">
                             <option>Preferences..</option>
                             <option>Business Development</option>
-                            <option>Content Writer</option>
+                            <option>Content Writing</option>
                             <option>Software Development</option>
                         </select>
                     </div>

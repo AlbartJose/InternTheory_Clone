@@ -3,8 +3,13 @@ function sortAll() {
     let data1 = JSON.parse(localStorage.getItem("sortCity"));
     let data2 = JSON.parse(localStorage.getItem("sortType"));
     let data3 = JSON.parse(localStorage.getItem("sortPref"));
+    if (data == null) data = [];
+    if (data1 == null) data1 = [];
+    if (data2 == null) data2 = [];
+    if (data3 == null) data3 = [];
 
     var content = (JSON.parse(localStorage.getItem('internships')));
+    console.log(content);
     if (data1.length != 0) {
         var datax1 = content.filter(function (el) {
             for (let i = 0; i < data1.length; i++) {
@@ -38,7 +43,7 @@ function sortAll() {
         var datax2 = datax1;
 
     }
-
+    console.log(data3);
     if (data3.length != 0) {
         var datax3 = datax2.filter(function (el) {
             for (let i = 0; i < data3.length; i++) {
@@ -116,6 +121,9 @@ function AppendSortItems(el) {
 
 function dispSortItems() {
     let data = JSON.parse(localStorage.getItem("sortItems"));
+    if (data == null) data = [];
+    console.log("-----", data);
+
     var disp_div = document.getElementById("dispfilter");
     disp_div.innerHTML = null;
     data.forEach(function (el) {
@@ -227,6 +235,12 @@ function removeItem(el) {
     let data1 = JSON.parse(localStorage.getItem("sortCity"));
     let data2 = JSON.parse(localStorage.getItem("sortType"));
     let data3 = JSON.parse(localStorage.getItem("sortPref"));
+
+    if (data == null) data = [];
+    if (data1 == null) data1 = [];
+    if (data2 == null) data2 = [];
+    if (data3 == null) data3 = [];
+
     if (data1.includes(el)) {
         var pos1 = data1.indexOf(el);
 
