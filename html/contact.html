@@ -4,42 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="styleHeadFoot.css" rel="stylesheet">
-    <link href="homeSigned.css" rel="stylesheet">
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/styleContact.css" rel="stylesheet">
+    <link href="../css/homeSigned.css" rel="stylesheet">
 
     <style>
-        .containerDummy{
-            width: 100%;
-            height: 37.5rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .containerDummy>div{
-            width: 50%;
-            height: 60%;
-            flex-direction: column;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5%;
-            border: 1px solid rgb(228, 228, 228);
-        }
-        .containerDummy>div>div{
-            text-align: center;
-            font-size: 1.563rem;
-            
-        }
-        .containerDummy>div>div>a{
-            text-decoration: none;
-        }
-
+        
     </style>
 
 </head>
 
 <body>
-
 
 
     <div class="hbside1" id="hbsideid1">
@@ -245,18 +221,55 @@
             </div>
         </div>
     </div>
+    
+    
 
     <div class="content" id="con1">
-        <div class="containerDummy">
+        <div class="contactb1">
             <div>
-                <img src="https://cdn.dribbble.com/users/176039/screenshots/5484224/courses-goodhabitz-wevoke-dribbble-01.gif" style='width:300px'>
-                <div>Congragulations!<br> All the courses will be added to your account shortly. Do checkout the blogs and other courses in the <a href="mainPage.html">Home Page</a></div>
-                <div></div>
+                <div class="contactb1head">Contact</div>
+                <div>Have something to say? Give us a holler through any one of the ways below, and we’ll get back within 24 hours. On a side
+                    note, like the rest around us, we have fallen victims to Social Media. Feel free to get in touch on Facebook, LinkedIn
+                    or Instagram anytime!
+                </div>
+                <div class="contactinfo">
+                    <form>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoEmail" placeholder="Email Address"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoMobile" placeholder="Mobile no"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <input class="contactinpb1" type="text" id="contactinfoSub" placeholder="Subject"><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div>
+                            <textarea placeholder="Message" id="contactinfoMessage" class="contactMessage contactinpb1"></textarea><br>
+                            <div class="contactinpb2">Required</div>
+                        </div>
+                        <div class="contactsubmit">
+                            <button type="submit" class="pointer">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contactSocial">
+                    <div>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                    <div>OR</div>
+                    <div>Call: +91 81047 73673</div>
+                </div>
             </div>
+            <div><img src="../images/mapInternTheory.JPG"></div>
         </div>
-
     </div>
-
 
     <div class="contentFoot">
         <div class="footb1">
@@ -326,13 +339,8 @@
     </div>
 
 
-
-
-
-
-
 </body>
 
 </html>
-<script src="mainPage.js"></script>
-<script src="sideTab.js"></script>
+
+<script src="../scripts/sideTab.js"></script>

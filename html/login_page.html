@@ -2,202 +2,24 @@
 <html>
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap"rel="stylesheet">
-    <link rel="icon" type="image/x-icon"href="https://drive.google.com/file/d/1RRpKl9lt4r2DJEnePaQ7UxXVh9Y9JwJR/view?usp=sharing" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href='internship.css' rel='stylesheet' type='text/css'>
-    <link href="styleHeadFoot.css" rel="stylesheet">
-    <link href="homeSigned.css" rel="stylesheet">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../css/styleHeadFoot.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/studentAndCompany_login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+      />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
 </head>
-<style>
-    #user_data{
-        width:300px;
-        height:300px;
-        box-shadow: 0 2px 2px 0 rgba(80, 80, 80, 0.2), 0 2px 5px 0 rgba(83, 83, 83, 0.19);
-        background-color:white;
-    }
-    #rightbox{
-        height:400px;
-    }
-    #rightHeading{
-        width:56.25rem;
-        height:5rem;
-        float:left;
-        margin-left:1.25rem;
-        margin-top: 0.625rem;
-        background-color:white;
-    }
-    #user_data a{
-        font-family: 'Roboto', sans-serif;
-        font-size:13px;
-        text-align: center;
-        padding-top:5px;
-        background-color:rgb(2, 107, 245);
-        color:white;
-        border: 0px;
-        box-shadow: 0 0px 0px;
-        border-radius:5px;
-        font-weight: bold;
-        float:left;
-        height:1.25rem;
-        width:5.625rem;
-        margin-left: 6.563rem;
-        margin-top: 5px;
-        text-decoration: none;
-    }
-    #user_data p:first-of-type{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        float:left;
-        clear:both;
-        margin-left: 6.813rem;
-        margin-top: 5px;
-        font-size:0.875rem;
-        color:rgb(153, 153, 153);
-
-    }
-    .data{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        text-align:left;
-        margin-left:3.125rem;
-        margin-top: 10px;
-    }
-    .heading1{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        float:left;
-        font-size:1.25rem;
-        margin-top: 1.563rem;
-        margin-left: 1.563rem;
-
-    }
-    .heading1 a{
-        font-size: 1.375rem;
-        font-weight:600;
-    }
-    #form1{
-        width:90%;
-        height:25rem;
-        margin-left: 5%;
-        float:left;
-    }
-    .form1_1{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        float:left;
-        margin-left:2.188rem;
-        margin-top:-20.313rem;
-        font-weight: 600;
-    }
-    .vertical_line{
-        margin-top:2.813rem;
-        height:300px;
-        width:0%;
-        border:1px solid black;
-        margin-left:2%;
-        background-color:rgb(3, 3, 3);
-    }
-    .circle{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        width: 1.25rem;
-        height:1.25rem;
-        border-radius: 1.25rem;
-        text-align:center;
-        color:white;
-        float:left;
-        margin-left:1%;
-        margin-top:1.25rem;
-        background-color:rgb(2, 107, 245);
-    }
-    .form1_2{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        float:left;
-        margin-left:35px;
-        margin-top:-295px;
-        font-weight: 300;
-
-    }
-    #form1_input{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        border:0px solid black;
-        border-bottom: 1px solid rgb(58, 58, 58);
-        height:30px;
-        width:90%;
-        float:left;
-        margin-left:35px;
-        margin-top:-265px;
-    }
-    .form1_3{
-        margin-top:-164px;
-    }
-    
-    
-    #form1_checkbox{
-        margin-top: -131px;
-        margin-left: 40px;
-        float:left;
-
-    }
-    #checkbox1,#checkbox2{
-        font-size:12px;
-        width:1.25rem;
-        height:1.25rem;
-        margin-left:0px;
-        margin-top: 0px;
-    }
-    .check{
-        float:left;
-    }
-    .form1_next{
-        float:right;
-        font-family: 'Roboto', sans-serif;
-        font-size:15px;
-        text-align: center;
-        text-decoration: none;
-        padding-top:4px;
-        background-color:#DF1E2E;
-        color:white;
-        border: 0px;
-        box-shadow: 0 0px 0px;
-        border-radius:5px;
-        font-weight: bold;
-        height:30px;
-        width:4.063rem;
-        margin-right: 2.813rem;
-        margin-top: -1.25rem;
-        cursor: pointer;
-       
-    }
-    #checkbox_l {
-        margin-top:0px;
-       
-    }
-    #form_alert{
-        float:left;
-        margin-top:-14.375rem;
-        margin-left:2.188rem;
-        font-size:11px;
-        color:#DF1E2E;
-        visibility:hidden;
-    }
-    .circle2{
-        background-color: gray;
-        margin-top:19.063rem;
-        margin-left:-9px;
-    }
-    #application_form{
-        font-size:13px;
-        width:14.375rem;
-        margin-top:19.188rem;
-        margin-left:1.25rem;
-        color:gray;
-
-    }
-
-
-</style>
 
 <body>
+
+
+
     <div class="hbside1" id="hbsideid1">
         <div>
             <div class="hb1sidehead">
@@ -388,65 +210,94 @@
     
     
                 </div>
-                <div class="signedUserPr">
-                    <div>
-                        <div class="imgLogin"><img
-                                src="https://www.clipartmax.com/png/middle/269-2691367_user-login-person-man-enter-comments-logo.png">
-                        </div>
-                        <div>LogedIn</div>
-                        <div class="logout"></div>
-                    </div>
-                </div>
+                <div>
+                    <a class="sign" href="login_page.html">
+                        <div>SIGN IN</div>
     
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 
+
     <div class="content" id="con1">
-        <div id='main'>
-            <div id='leftbox'>
-                <div id='user_data'>
-                    <img src='https://img.freepik.com/free-vector/businessman-character-avatar-isolated_24877-60111.jpg?size=338&ext=jpg'
-                        style='width:100px;height:100px;margin-left: 100px;margin-top: 30px'>
-                    <a href='dashboard.html'>MY PROFILE</a>
-                    <p>Albart Jose</p>
-                    <div
-                        style='height:-5px;width:230px;border:1px solid rgb(151, 151, 151);float:left;margin-left:35px;margin-bottom: 15px;'>
+        <div id="example">
+            <div id="main_block" >
+                <div class="main_block1">
+                <div class="student_company" style="clear: both;">
+                    <div class="s_btn" style="float: left; ">
+                        <h2 id="studentBtn" >STUDENT</h2>
                     </div>
-                    <p class='data'>albartbtme@gmail.com</p>
-                    <p class='data'>7408939361</p>
+                    <div class="c_btn" style="float: left">
+                        <h2 id="companyBtn">COMPANY</h2>
+                    </div>
+                </div>
+                <div class="first_block" style="clear: both;">
+                         <h2>Login</h2>
+                </div>
+              <div class="second_block">
+                <p>
+                  If you are a company looking to hire interns, please login as a
+                  company by clicking <a href="">here</a>"."
+                </p>
+              </div>
+              <div id="studentTab">
+                
+                <div class="third_block" style="width: 97%; background-color:rgb(13, 130, 226);border-radius: 5px;text-align: center; margin-top: 5px;">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img  src="https://www.interntheory.com/assets/iconsLogos/facebook-circular-logo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%;">SIGNIN WITH FACEBOOK</div></a>
+                  </div>
+                 
+                  <div class="third_block" style="width: 97%; background-color:rgb(13, 130, 226);border-radius: 5px;text-align: center; margin-top: 5px;">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img  src="https://www.interntheory.com/assets/iconsLogos/googlelogo.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%">SIGNIN WITH GOOGLE</div></a>
+                  </div>
+                  </div>
+              <div style="display: none;" id="companyTab">
+                <div class="third_block" style="width: 97%; background-color:rgb(13, 130, 226);border-radius: 5px;text-align: center; margin-top: 5px;">
+                    <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=428399661061982&kid_directed_site=0&app_id=428399661061982&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv3.0%2Fdialog%2Foauth%3Fclient_id%3D428399661061982%26redirect_uri%3Dhttps%253A%252F%252Finterntheory.com%252Fapi%252Ffacebook%252Fcallback%26scope%3Demail%26response_type%3Dcode%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D6d3459b6-7ed7-4b85-a3db-1c2465510bc7%26tp%3Dunspecified&cancel_url=https%3A%2F%2Finterntheory.com%2Fapi%2Ffacebook%2Fcallback%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DZIi3Ii6HWMRa4v8etG5vXhLZG4LuJfouKgS9Uoor%23_%3D_&display=page&locale=hi_IN&pl_dbl=0" style="color: white; font-family: 'Roboto', sans-serif;"><img  src="https://www.interntheory.com/assets/iconsLogos/linkedin.svg" style="float: left; margin-left: 5%;margin-top: 1%; background-color: white;" height="20" ><div style="margin-top:1.4%; font-weight: 590; letter-spacing: 0.05em; font-size: 14px;font-family:'Roboto', sans-serif; width: 100%;">SIGNIN WITH LINKEDIN</div></a>
+                  </div>
+                  </div>
+                <div style="text-align: center;">
+                  <h6 style="color: rgb(160, 157, 157); font-family: 'Roboto', sans-serif; ; margin: 0 0 0 0;">OR</h6>
                 </div>
             </div>
-            <div id='rightHeading'>
-                <p class='heading1'>Application for <a>Digital Marketing</a> for <a>MOONSTRUCK ADVERTISING</a></p>
-            </div>
-            <div id='rightbox'>
-        
-                <div id='form1'>
-                    <div class='circle'>1</div>
-                    <div class='vertical_line'>
-                        <div class='circle circle2'>2</div>
-                        <p id='application_form'>Application Form</p>
-        
+            <div class="form_buildingBlock">
+              <form id="form">
+                  <div class="email" style="padding-left: 0;">
+                  <label for="email"> 
+                      <input autocomplete="off" id="email" type="text" placeholder="Email/Number" />
+                    </label>
                     </div>
-                    <p class='form1_1'>Before you apply for internships please answer these questions</p>
-                    <p class='form1_2'>Why do you wish to join us? What do you find interesting about this internship or
-                        company?</p>
-                    <input type='text' id='form1_input' placeholder='Type the answer here'>
-                    <p id='form_alert'>Required</p>
-                    <p class='form1_2 form1_3'>Please confirm that you satisfy the following criteria *</p>
-                    <div id='form1_checkbox'>
-                        <input type="checkbox" name="working" id="checkbox1"> <label for="checkbox1" id='checkbox_l'>Are you
-                            able to work between Jul 20, 2021 to Jul 25, 2021</label>
-                        <input type="checkbox" name="working_location" id="checkbox2"> <label for="checkbox2" id='checkbox_l'>
-                            Are you available to work in mumbai?</label>
+                  <div class="password" style="padding-left: 0;">
+                  <label for="password">
+                      <input id="password" type="password" placeholder="Password"/>
+                    </label>
                     </div>
-                    <a class='form1_next' id='next' onclick='checkFields()'>NEXT</a>
+                  <div id = "wrong" style="display: none;">
+                    <p style="color: red; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; height: 15px; font-size: 12px;margin-left: 2%;">Wrong Password</p>
+                  </div>
+                  <div class="crf" style="margin-left:3%;">
+                      <input type="checkbox" name="check" id="checkBox" />
+                      <label for="checkBox"><span> Remember Me</span>
+                    <a href="">Forgot Password?</a>
+                        </label>
+                  </div>
+                <div>
+                  <div class="dha" style="padding-left: 5%;">
+                    <span>Don't Have an account?</span>
+                    <a href="">Create Your account</a>
+                  </div>
                 </div>
+              </form>
+              <div class="loginButton">
+                <input type="button" value="LOGIN" onclick="Login()" class="logindBtn">
             </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
-    
+
 
     <div class="contentFoot">
         <div class="footb1">
@@ -467,7 +318,7 @@
                         facebook
                     </span>
                 </div>
-    
+
             </div>
             <div class="info">
                 <div>
@@ -512,14 +363,17 @@
         <div class="footb3">
             © 2015 - 2021 INTERNTHEORY. ALL RIGHTS RESERVED.
         </div>
-    
+
     </div>
+
+
+
+
+
 
 
 </body>
 
 </html>
-
-<script src='submit1.js'></script>
-<script src="sideTab.js"></script>
-
+<script src="../scripts/studentAndCompany_login.js"></script>
+<script src="../scripts/sideTab.js"></script>
