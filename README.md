@@ -15,6 +15,6 @@ We as a team worked on building the pre-login pages, login and signup pages and 
 
 ## For Developers
 `clone the repository`<br />
-`copy the path of the home file and run in browser`<br />
+`copy the path of the index file and run in browser`<br />
      ` or`<br />
-`click on the home file and run in live server`<br />
+`click on the index file and run in live server`<br />
