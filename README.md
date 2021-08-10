@@ -18,3 +18,7 @@ We as a team worked on building the pre-login pages, login and signup pages and 
 `copy the path of the index file and run in browser`<br />
      ` or`<br />
 `click on the index file and run in live server`<br />
+
+## Blogs
+For further details on our cloned website, you can visit our blogs.<br />
+1.Albart Jose { https://albartjose.hashnode.dev/interntheory-website-clone }<br />
