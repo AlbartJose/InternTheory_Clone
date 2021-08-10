@@ -9,9 +9,9 @@ Technology Stack we used in building this Project :<br />
 We as a team worked on building the pre-login pages, login and signup pages and pages after login. Further, we focused on the functioning of the website and implemented features inludes sorting the courses, add to cart and Payment gateway  which uses promises, localstorage,... etc.<br />
 
 ## Team members: <br />
-1. Albart Jose {github - https://github.com/AlbartJose }<br />
-2. Jai yadav {github - https://github.com/jai6013 }<br />
-3. Srikanth {github - https://github.com/Srikanth }<br />
+1. Albart Jose { github - https://github.com/AlbartJose }<br />
+2. Jai yadav { github - https://github.com/jai6013 }<br />
+3. Srikanth { github - https://github.com/Srikanth }<br />
 
 ## For Developers
 `clone the repository`<br />
@@ -21,4 +21,6 @@ We as a team worked on building the pre-login pages, login and signup pages and 
 
 ## Blogs
 For further details on our cloned website, you can visit our blogs.<br />
-1.Albart Jose { https://albartjose.hashnode.dev/interntheory-website-clone }<br />
+1. Albart Jose { https://albartjose.hashnode.dev/interntheory-website-clone }<br />
+2. Srikanth { https://medium.com/@vnts.srikanth/cloning-of-interntheory-website-my-first-collaborative-work-8b7d1f4b2a7f }
+
