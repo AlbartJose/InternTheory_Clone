@@ -37,4 +37,4 @@ We as a team worked on building the pre-login pages, login and signup pages and 
 For further details on our cloned website, you can visit our blogs.<br />
 1. Albart Jose { https://albartjose.hashnode.dev/interntheory-website-clone }<br />
 2. Srikanth { https://medium.com/@vnts.srikanth/cloning-of-interntheory-website-my-first-collaborative-work-8b7d1f4b2a7f }
-
+3. Jai Yadav { https://hashnode.com/post/a-clone-of-interntheorycom-ckrlp8ia30cfufes18m2k390d }
