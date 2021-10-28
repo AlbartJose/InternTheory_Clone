@@ -25,7 +25,7 @@ We as a team worked on building the pre-login pages, login and signup pages and 
 ## Team members: <br />
 1. Albart Jose { github - https://github.com/AlbartJose }<br />
 2. Jai yadav { github - https://github.com/jai6013 }<br />
-3. Srikanth { github - https://github.com/Srikanth }<br />
+3. Srikanth { github - https://github.com/srikanth-vnts }<br />
 
 ## For Developers
 `clone the repository`<br />
